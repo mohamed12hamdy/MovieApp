@@ -43,15 +43,17 @@ The project provides secure movie management APIs with **role-based access** (Ad
 ## 📥 1. Clone the Repository
 
 git clone https://github.com/mohamed12hamdy/Movieapp.git
-cd movie-management-app
-🖥️ 2. Application Setup
 
-1.Configure PostgreSQL in application.properties:
+## 🖥️ 2. Application Setup
+### 🔑  Database Configuration
 spring.datasource.url=jdbc:postgresql://localhost:5432/movie_db
 spring.datasource.username=your_db_username
 spring.datasource.password=your_db_password
+
+### ⚙️  Hibernate / JPA Settings
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
+
+### 🎬  External API Key (OMDB)
 omdb.api-key=YOUR_OMDB_API_KEY
-2.Build and Run the Application:
-mvn spring-boot:run
+
